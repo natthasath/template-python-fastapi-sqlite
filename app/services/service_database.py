@@ -4,7 +4,7 @@ import sqlite3
 
 class DatabaseService:
     def __init__(self):
-        self.conn = sqlite3.connect('sqlite.db')
+        self.conn = sqlite3.connect('db.sqlite')
         self.cursor = self.conn.cursor()
 
     def create_table(self):
